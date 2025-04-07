@@ -1,0 +1,116 @@
+//개발_유은채_수정_25.4.7
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예시용 첫 번째 페이지</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      overflow-x: hidden;
+    }
+
+    .slider-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .slide {
+      flex: none;
+      scroll-snap-align: center;
+      width: 100%;
+      max-width: 100vw;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .caption {
+      color: red;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 16px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider-container">
+    <div class="slide">
+      <div class="caption">1. 정부24 어플 또는 홈페이지 접속<br>(<a href="https://www.gov.kr/portal/main/nologin" target="_blank">바로가기</a>)</div>
+      <img src="page1/1.png" alt="1단계 이미지">
+    </div>
+
+    <div class="slide">
+      <div class="caption">2. 로그인<br>화면 우측 상단의 로그인 버튼 클릭<br>공동인증서, 간편인증, 디지털원패스 등으로 로그인</div>
+      <img src="page1/2_1.png" alt="2단계 이미지 1">
+    </div>
+
+    <div class="slide">
+      <div class="caption">2. 로그인 (계속)</div>
+      <img src="page1/2_2.png" alt="2단계 이미지 2">
+    </div>
+
+    <div class="slide">
+      <div class="caption">2. 로그인 (계속)</div>
+      <img src="page1/2_3.png" alt="2단계 이미지 3">
+    </div>
+
+    <div class="slide">
+      <div class="caption">3. 민원 검색 또는 바로가기<br>검색창에 “주민등록등본” 입력 또는 메뉴에서 선택</div>
+      <img src="page1/3.png" alt="3단계 이미지">
+    </div>
+
+    <div class="slide">
+      <div class="caption">4. 민원 신청<br>‘신청하기’ 클릭, 온라인 발급 선택, 기본 정보 입력</div>
+      <img src="page1/4_1.png" alt="4단계 이미지 1">
+    </div>
+
+    <div class="slide">
+      <div class="caption">4. 민원 신청 (계속)</div>
+      <img src="page1/4_2.png" alt="4단계 이미지 2">
+    </div>
+
+    <div class="slide">
+      <div class="caption">5. 본인 인증 및 수수료 결제<br>등본 발급은 무료 (일부 민원은 유료)</div>
+      <img src="page1/5.png" alt="5단계 이미지">
+    </div>
+
+    <div class="slide">
+      <div class="caption">6. 문서 출력<br>신청 완료 후 “문서출력” 클릭 → 프린터로 출력</div>
+      <img src="page1/6.png" alt="6단계 이미지">
+    </div>
+  </div>
+
+  <a href="../../index.html" class="back-link">← 홈으로 돌아가기</a>
+
+</body>
+</html>
+
